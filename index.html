@@ -13,8 +13,8 @@
         <audio id="ambiente" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/1ambiente_agua.mp3?v=1666080982324"></audio>
       </a-assets>
       
-      <a-entity camera look-controls wasd-controls="acceleration:100; fly:true;" 
-                position="0.6 -1674 -1697"
+      <a-entity camera look-controls wasd-controls="acceleration:1000; fly:true;" 
+                position="0 0 0"
                 universal-controls
                 kinematic-body></a-entity>
       
@@ -29,8 +29,8 @@
                   sound="src: #ambiente;
                          autoplay: true;
                          maxDistance: 100000;
-                         refDistance: 300;
-                         rolloffFactor: 2"
+                         refDistance: 350;
+                         rolloffFactor: 1.7"
                  ></a-entity>
       
       <a-entity gltf-model="#esqueleto"
