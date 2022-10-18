@@ -9,10 +9,11 @@
       <a-assets>
         <img id="panorama" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/panorama_3000.jpg?v=1666069833521">
         <a-asset-item id="ovo" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/ovo_02.glb?v=1666070547349"></a-asset-item>
+        <a-asset-item id="esqueleto" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/esqueleto_neuro.glb?v=1666070970528"></a-asset-item>
       </a-assets>
       
       <a-entity camera look-controls wasd-controls="acceleration:100; fly:true;" 
-                position="-309 -66 -48"
+                position="0 0 0"
                 universal-controls
                 kinematic-body></a-entity>
       
@@ -20,10 +21,12 @@
       
        <a-entity  gltf-model="#ovo" 
                   position="0 0 0"
-                  scale="10 10 10"
+                  scale="100 100 100"
                   static-body></a-entity>
       
-      
+      <a-entity gltf-model="#esqueleto"
+                scale="100 100 100"
+                ></a-entity>
       
     </a-scene>
   </body>
