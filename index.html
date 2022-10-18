@@ -26,13 +26,21 @@
                   position="0 0 0"
                   scale="100 100 100"
                   static-body
-                  sound="src: "></a-entity>
+                  sound="src: #ambiente;
+                         autoplay: true;
+                         maxDistance: 100000;
+                         refDistance: 300;
+                         rolloffFactor: 2"
+                 ></a-entity>
       
       <a-entity gltf-model="#esqueleto"
                 scale="100 100 100"
                 ></a-entity>
       
-      <!--<a-sound src="#ambiente" autoplay="true" position="0.6 -1674 -1697"></a-sound>-->
+      <!--<a-sound src="#ambiente" 
+               autoplay="true" 
+               position="0 0 0"
+               ></a-sound>-->
       
       
     <!--<a-entity id="dust"
