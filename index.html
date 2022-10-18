@@ -20,6 +20,8 @@
       
       <a-sky id="image-360" radius="10000" src="#panorama" animation="property: rotation; to: 0 360 0; loop: true; dur: 300000; easing: linear;"></a-sky>
       
+      <a-entity light="type: ambient; color: #CCC"></a-entity>
+      
        <a-entity  gltf-model="#ovo" 
                   position="0 0 0"
                   scale="100 100 100"
@@ -32,8 +34,17 @@
       <a-entity id="dust"
                 position="0.6 -1674 -1697" 
                 particle-system="preset: dust;
-                                 color: #FFFFFF,#FFFFFF;
-                                 particleCount: 5000">
+                                maxAge: 47;
+                                positionSpread: 25 2 20;
+                                type: 3;
+                                color: #C8DAD8, #5C6D74;
+                                opacity: 1;
+                                particleCount: 50000;
+                                size: 50;
+                                maxParticleCount:60000;
+                                dragSpread: 10;
+                                blending: 0"
+                                >
                           </a-entity>
       
     </a-scene>
