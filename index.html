@@ -14,7 +14,7 @@
       </a-assets>
       
       <a-entity camera look-controls wasd-controls="acceleration:100; fly:true;" 
-                position="0 0 0"
+                position="0.6 -1674 -1697"
                 universal-controls
                 kinematic-body></a-entity>
       
@@ -29,17 +29,12 @@
                 scale="100 100 100"
                 ></a-entity>
       
-      <a-entity position="0 0 0" 
+      <a-entity id="dust"
+                position="0.6 -1674 -1697" 
                 particle-system="preset: dust;
-                                maxAge: 47;
-                                color: white;
-                                positionSpread:  2 20;
-                                type: 3;
-                                particleCount: 50000;
-                                size: 20;
-                                maxParticleCount:60000;
-                                dragSpread: 10;">
-      </a-entity>
+                                 color: #FFFFFF,#FFFFFF;
+                                 particleCount: 5000">
+                          </a-entity>
       
     </a-scene>
   </body>
