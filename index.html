@@ -15,14 +15,14 @@
         <audio id="neuronio" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/3olho_nuronio.mp3?v=1666083016511"></audio>
       </a-assets>
       
-      <a-entity id="rig" movement-controls kinematic-body jump-ability>
-          <a-entity camera look-controls="pointerLockEnabled" wasd-controls="acceleration:1000; fly:true" 
+    <a-entity id="rig" movement-controls kinematic-body jump-ability>
+          <a-entity camera look-controls wasd-controls="acceleration:1000; fly:true" 
                     position="0 0 0"></a-entity>
       </a-entity>
       
-      
+      <!--<a-entity camera universal-controls kinematic-body></a-entity>-->
     
-      
+  
       <a-sky id="image-360" radius="10000" src="#panorama" animation="property: rotation; to: 0 360 0; loop: true; dur: 300000; easing: linear;"></a-sky>
       
      <!--<a-entity light="type: ambient; color: #CCC"></a-entity> -->
