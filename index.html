@@ -10,6 +10,7 @@
         <img id="panorama" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/panorama_3000.jpg?v=1666069833521">
         <a-asset-item id="ovo" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/ovo_02.glb?v=1666070547349"></a-asset-item>
         <a-asset-item id="esqueleto" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/esqueleto_neuro.glb?v=1666070970528"></a-asset-item>
+        <audio id="ambiente" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/1ambiente_agua.mp3?v=1666080982324"></audio>
       </a-assets>
       
       <a-entity camera look-controls wasd-controls="acceleration:100; fly:true;" 
@@ -24,11 +25,14 @@
        <a-entity  gltf-model="#ovo" 
                   position="0 0 0"
                   scale="100 100 100"
-                  static-body></a-entity>
+                  static-body
+                  sound="src: "></a-entity>
       
       <a-entity gltf-model="#esqueleto"
                 scale="100 100 100"
                 ></a-entity>
+      
+      <!--<a-sound src="#ambiente" autoplay="true" position="0.6 -1674 -1697"></a-sound>-->
       
       
     <!--<a-entity id="dust"
