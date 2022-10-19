@@ -15,7 +15,7 @@
         <audio id="ambiente" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/1ambiente_agua.mp3?v=1666080982324"></audio>
         <audio id="neuronio" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/3olho_nuronio.mp3?v=1666161315023"></audio>
       <a-asset-item id="cubo" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/cubo.glb?v=1666160236485"></a-asset-item>
-          <a-asset-item id="olho" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/neuro_pivot.glb?v=1666162093201"></a-asset-item>
+          <a-asset-item id="olho" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/neuro_pivot01.glb?v=1666163771700"></a-asset-item>
       </a-assets>
       
     <a-entity id="rig" movement-controls kinematic-body jump-ability>
@@ -39,19 +39,19 @@
                          refDistance: 350;
                          rolloffFactor: 1.7;
                          loop: true;
-                         volume: 2"
-                 ></a-entity>
+                         volume: 2"></a-entity>
       
       <a-entity gltf-model="#esqueleto"
                 scale="100 100 100"
                 position="-420 0 0"
-                animation-mixer="clip:Take001; loop:infinite"
-                ></a-entity>
+                animation-mixer="loop:infinite"></a-entity>
       
        <a-entity gltf-model="#olho"
                  scale="100 100 100"
-                 animation="property: rotation; to: 0 360 0; loop: true; dur:20000"
-                ></a-entity>
+                 position="0 0 0"
+                 animation="scale;"></a-entity>
+      
+       <!--animation="property: rotation; to: 0 360 0; loop: true; dur:20000"-->
       
       <a-entity position="-14 200 -224"
                 sound="src: #neuronio;
@@ -63,8 +63,7 @@
       
       <a-sound src="#ambiente" 
                autoplay="true" 
-               position="0 0 0"
-               ></a-sound>
+               position="0 0 0"></a-sound>
       
        <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>
       
