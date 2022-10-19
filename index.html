@@ -11,10 +11,11 @@
       <a-assets>
         <img id="panorama" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/panorama_3000.jpg?v=1666069833521">
         <a-asset-item id="ovo" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/ovo_02.glb?v=1666070547349"></a-asset-item>
-        <a-asset-item id="esqueleto" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/esqueleto_neuro.glb?v=1666070970528"></a-asset-item>
+        <a-asset-item id="esqueleto" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/PASSARO_anima%C3%A7ao01.glb?v=1666157561513"></a-asset-item>
         <audio id="ambiente" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/1ambiente_agua.mp3?v=1666080982324"></audio>
-        <audio id="neuronio" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/3olho_nuronio.mp3?v=1666083016511"></audio>
+        <audio id="neuronio" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/3olho_nuronio.mp3?v=1666161315023"></audio>
       <a-asset-item id="cubo" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/cubo.glb?v=1666160236485"></a-asset-item>
+          <a-asset-item id="olho" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/neuro.glb?v=1666160958120"></a-asset-item>
       </a-assets>
       
     <a-entity id="rig" movement-controls kinematic-body jump-ability>
@@ -43,6 +44,12 @@
       
       <a-entity gltf-model="#esqueleto"
                 scale="100 100 100"
+                position="-420 0 0"
+                ></a-entity>
+      
+       <a-entity gltf-model="#olho"
+                 scale="100 100 100"
+                 animation="property: rotation; to:"
                 ></a-entity>
       
       <a-entity position="-14 200 -224"
@@ -58,7 +65,7 @@
                position="0 0 0"
                ></a-sound>
       
-       <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:"></a-entity>
+       <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>
       
       
       
