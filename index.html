@@ -16,11 +16,11 @@
         <audio id="neuronio" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/3olho_nuronio.mp3?v=1666161315023"></audio>
       <a-asset-item id="cubo" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/cubo.glb?v=1666160236485"></a-asset-item>
         <a-asset-item id="olho" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/neuro_pivot01.glb?v=1666163771700"></a-asset-item>
-        <a-asset-item id="cascas1" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/fila_cascas2.glb?v=1666265820847"></a-asset-item>
+        <a-asset-item id="cascas1" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/fila_cascas3.glb?v=1666266791493"></a-asset-item>
       </a-assets>
       
     <a-entity id="rig" movement-controls kinematic-body jump-ability>
-          <a-entity camera look-controls wasd-controls="acceleration:1000; fly:true" 
+          <a-entity camera look-controls wasd-controls="acceleration:10; fly:true"  
                     position="0 0 0"></a-entity>
       </a-entity>
       
@@ -64,7 +64,7 @@
       
       <a-entity gltf-model="#cascas1"
                 scale="50 50 50"
-                position="1700 -500 500"
+                position="2500 -600 500"
                 rotation="0 0 0">
       </a-entity>
       
@@ -73,11 +73,7 @@
                position="0 0 0"></a-sound>
       
       <!-- <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>-->
-      
-      
-      
-      
-      
+    
     <!--<a-entity id="dust"
                 position="0.6 -1674 -1697" 
                 particle-system="preset: dust;
