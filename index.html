@@ -40,7 +40,7 @@
                   scale="200 200 200"
                   sound="src: #ambiente;
                          autoplay: true;
-                         refDistance: 350;
+                         refDistance: 700;
                          rolloffFactor: 4;
                          loop: true;
                          volume: 3"></a-entity>
@@ -90,16 +90,18 @@
                 particle-system="preset: dust;
                                 maxAge: 47;
                                 positionSpread: 200 20 300;
-                                type: 2;
+                                type: 3;
                                 color: #C0FFFC, #D8FBFF;
-                                opacity: 0.015;
+                                opacity: 0.013;
                                 direction: 2;
                                 enable: true;
                                 particleCount: 30000;
                                 size: 50;
-                                maxParticleCount:50000;
+                                maxParticleCount:30000;
                                 blending: 1;
-                                dragSpread: 20">
+                                dragSpread: 20;
+                                accelerationValue: 0.1 -0.1 0.1;
+                                 ">
    </a-entity>
           
     </a-scene>
