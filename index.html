@@ -16,7 +16,7 @@
         <audio id="neuronio" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/3olho_nuronio.mp3?v=1666161315023"></audio>
       <a-asset-item id="cubo" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/cubo.glb?v=1666160236485"></a-asset-item>
         <a-asset-item id="olho" responsive-type="array-buffer" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/neuro_pivot01.glb?v=1666163771700"></a-asset-item>
-        <a-asset-item id="cascas1" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/fila_cascas.glb?v=1666264376426"></a-asset-item>
+        <a-asset-item id="cascas1" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/fila_cascas1.glb?v=1666265574957"></a-asset-item>
       </a-assets>
       
     <a-entity id="rig" movement-controls kinematic-body jump-ability>
@@ -34,7 +34,7 @@
        <a-entity  static-body
                   gltf-model="#ovo" 
                   position="0 0 0"
-                  scale="100 100 100"
+                  scale="200 200 200"
                   sound="src: #ambiente;
                          autoplay: true;
                          refDistance: 350;
@@ -43,12 +43,12 @@
                          volume: 2"></a-entity>
       
       <a-entity gltf-model="#esqueleto"
-                scale="100 100 100"
+                scale="200 200 200"
                 position="0 0 0"
                 animation-mixer="loop:infinite; dir:inverse"></a-entity>
       
        <a-entity gltf-model="#olho"
-                 scale="100 100 100"
+                 scale="00 100 100"
                  position="0 0 0"
                    animation="property: scale; to: 110 110 110; dir: alternate; loop: true; dur: 2000"></a-entity>
       
@@ -64,7 +64,7 @@
       
       <a-entity gltf-model="#cascas1"
                 scale="100 100 100"
-                position="350 40 -50">
+                position="-100 40 200">
       </a-entity>
       
       <a-sound src="#ambiente" 
