@@ -7,7 +7,7 @@
     <script src="https://ideaspacevr.github.io/aframe-particle-system-component/dist/aframe-particle-system-component.js"></script>
   </head>
   <body>
-    <a-scene physics="debug: true" background="color: #000b10" light="defaultLightsEnabled: false">
+    <a-scene physics="debug: true" background="color: #000b10">
       
      <a-assets>
         <img id="panorama" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/panorama_3000.jpg?v=1666069833521">
@@ -27,13 +27,19 @@
                     position="0 0 0"></a-entity>
   
       
-      <!--<a-entity camera universal-controls kinematic-body></a-entity> -20 -3378 -3343-->
-    <a-entity light="type: directional; color: #FFF; intensity: 2" position="-0.5 1 1"></a-entity>
+      <!--<a-entity camera universal-controls kinematic-body></a-entity> -20 -3378 -3343
+    <a-entity light="type: directional; color: #FFF; intensity: 1" position="-0.5 1 1"></a-entity>
       
-    <a-entity light="type: directional; color: #FFF; intensity: 2" position="0 0 0"></a-entity>
+    <a-entity light="type: directional; color: #FFF; intensity: 1" position="0 0 0"></a-entity>
 
-       <a-entity light="type: directional; color: #FFF; intensity: 2" position="0 0 0"></a-entity>
+     <a-entity light="type: directional; color: #FFF; intensity: 1" position="0.5 1 1"></a-entity>
+      
+        <a-entity light="type: directional; color: #FFF; intensity: 1" position="0.5 1 -1"></a-entity>-->
+      
+      
   
+
+      
       <a-sky id="image-360" radius="10000" src="#panorama" animation="property: rotation; to: 0 360 0; loop: true; dur: 300000; easing: linear;"></a-sky>
       
      <!--<a-entity light="type: ambient; color: #CCC"></a-entity> -->
