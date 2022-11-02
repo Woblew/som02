@@ -23,7 +23,7 @@
      
   
           <a-entity camera look-controls wasd-controls="acceleration:1000; fly:true"  
-                    position="-20 -3378 -3343"></a-entity>
+                    position="177 -2566 -2177"></a-entity>
   
       
       <!--<a-entity camera universal-controls kinematic-body></a-entity> -20 -3378 -3343
@@ -98,19 +98,20 @@
     <a-entity   id="dust"
                 position="-20 -3500 -3100" 
                 particle-system="preset: dust;
-                                maxAge: 7;
-                                positionSpread: 500 100 400;
+                                maxAge: 20;
+                                positionSpread: 500 100 700;
                                 type: 3;
                                 color: #C8DAD8, #5C6D74;
-                                opacity: 0.007;
-                                direction: 2;
+                                opacity: 0.005;
+                                direction: 0;
                                 enable: true;
                                 particleCount: 50000;
-                                size: 100;
+                                size: 200;
                                 maxParticleCount:60000;
                                 blending: 2;
-                                dragSpread: 10;
-                                 accelerationValue: 1
+                                dragSpread: 20;
+                                 accelerationValue: 10, 5, 7;
+dragValue:0.3
                                 ">
    </a-entity>
           
