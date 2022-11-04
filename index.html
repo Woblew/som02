@@ -16,9 +16,9 @@
         <audio id="ambiente" src="https://cdn.glitch.global/d6a06d90-06e2-4519-9b58-e692079ad168/1ambiente_agua.mp3?v=1666080982324" crossorigin="anonymous" preload="auto"></audio>
         <audio id="neuronio" src="https://cdn.glitch.global/2e2edc02-fe57-4912-923c-af422a11090a/3olho_nuronio.mp3?v=1666161315023" crossorigin="anonymous" preload="auto"></audio>
         <a-asset-item id="centro-dentro" src="https://cdn.glitch.global/8d60b7f2-3071-4bbc-a1b9-0c87596a22a5/centro_dentro.glb?v=1667573077882"></a-asset-item>
-        <a-asset-item id="centro-fora" src="#"></a-asset-item>
-        <a-asset-item id="veia01" src="#"></a-asset-item>
-        <a-asset-item id="veia02" src="#"></a-asset-item>
+        <a-asset-item id="centro-fora" src="https://cdn.glitch.global/8d60b7f2-3071-4bbc-a1b9-0c87596a22a5/centro_fora.glb?v=1667573080961"></a-asset-item>
+        <a-asset-item id="veia01" src="https://cdn.glitch.global/8d60b7f2-3071-4bbc-a1b9-0c87596a22a5/veia_01.glb?v=1667573090764"></a-asset-item>
+        <a-asset-item id="veia02" src="https://cdn.glitch.global/8d60b7f2-3071-4bbc-a1b9-0c87596a22a5/veia_02.glb?v=1667573091222"></a-asset-item>
         <a-asset-item id="veia03" src="#"></a-asset-item>
         <a-asset-item id="veia04" src="#"></a-asset-item>
         <a-asset-item id="veia05" src="#"></a-asset-item>
@@ -38,7 +38,7 @@
     </a-assets>
      
   
-          <a-entity camera look-controls wasd-controls="acceleration:2000; fly:true"  
+          <a-entity camera look-controls wasd-controls="acceleration:3000; fly:true"  
                     position="0 0 0"></a-entity>
   
       
@@ -78,9 +78,18 @@
       
        <a-entity gltf-model="#centro-dentro"
                  scale="200 200 200"
-                 position="-25 -45 -90"
+                 position="95 -45 200"
                  animation-mixer="loop:infinite"></a-entity>
       
+        <a-entity gltf-model="#centro-fora"
+                 scale="200 200 200"
+                 position="95 -45 200"
+                 animation-mixer="loop:infinite"></a-entity>
+      
+       <a-entity gltf-model="#veia01"
+                 scale="200 200 200"
+                 position="95 -45 200"
+                 animation-mixer="loop:infinite"></a-entity>
        <!--animation="property: rotation; to: 0 360 0; loop: true; dur:20000"-->
       
       <a-entity position="-5 427 -439"
