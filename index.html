@@ -21,7 +21,7 @@
     </a-assets>
      
   
-          <a-entity camera look-controls wasd-controls="acceleration:1000; fly:true"  
+          <a-entity camera look-controls wasd-controls="acceleration:2000; fly:true"  
                     position="0 0 0"></a-entity>
   
       
@@ -90,21 +90,22 @@
       <!-- <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>-->
     
     <a-entity   id="dust"
-                position="0 -1200 0" 
+                position="0 -1500 0" 
+                rotation="0 45 0"
                 particle-system="preset: dust;
-                                maxAge: 60;
-                                positionSpread: 5000 400 2500;
+                                maxAge: 7;
+                                positionSpread: 5000 1000 7000;
                                 type: 3;
                                 color: #C8DAD8, #5C6D74;
                                 opacity: 0.003;
                                 direction: 0;
                                 enable: true;
                                 particleCount: 100000;
-                                size: 700;
-                                maxParticleCount:500000;
+                                size: 1000;
+                                maxParticleCount:2000000;
                                 blending: 2;
                                 dragSpread: 20;
-                                 accelerationValue: 1, 0, 1;
+                                 accelerationValue: 10, -10, 10;
 dragValue:0.3;
                                  dragSpread: 0.5;
                                  randomise: true
