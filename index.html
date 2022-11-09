@@ -52,9 +52,6 @@
         <a-entity light="type: directional; color: #FFF; intensity: 1" position="0.5 1 -1"></a-entity>-->
       
       
-  
-
-      
       <a-sky id="image-360" radius="10000" src="#panorama" animation="property: rotation; to: 0 360 0; loop: true; dur: 300000; easing: linear;"></a-sky>
       
      <!--<a-entity light="type: ambient; color: #CCC"></a-entity> -->
@@ -178,17 +175,17 @@
       
       
       <a-entity gltf-model="#galho1"
-                scale="200 200 200"
+                scale="300 300 300"
                 position="0 -100 0">  
       </a-entity>
       
        <a-entity gltf-model="#galho1"
-                scale="200 200 200"
+                scale="300 300 300"
                  position = "-500 0 -3000">  
       </a-entity>
       
         <a-entity gltf-model="#galho2"
-                  scale="200 200 200">  
+                  scale="300 300 300">  
       </a-entity>
       
         <a-entity gltf-model="#galho2"
@@ -203,25 +200,25 @@
       <!-- <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>-->
     
    <a-entity   id="dust"
-                position="0 0 0" 
+                position="2000 -1500 0" 
                 rotation="0 0 0"
                 particle-system="preset: dust;
                                 maxAge: 7;
-                                positionSpread: 1200 70 2000;
+                                positionSpread: 1200 70 3000;
                                 type: 3 (disc);
                                 color: #C8DAD8, #5C6D74;
-                                opacity: 0.02;
+                                opacity: 0.023;
                                 direction: 0;
                                 enable: true;
-                                particleCount: 700;
+                                particleCount: 1000;
                                 size: 1000;
-                                maxParticleCount:2000;
+                                maxParticleCount:3000;
                                 blending: 2;
                                 dragSpread: 10;
                                 dragValue:0.3;
                                 dragSpread: 0.5;
                                 randomise: true;
-                                accelerationValue: -20, -5, -20
+                                accelerationValue: -20, -10, -20
                                 ">
    </a-entity>
           
