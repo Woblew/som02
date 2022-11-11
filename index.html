@@ -255,26 +255,48 @@
       
       <!-- <a-entity gltf-model="#cubo" animation-mixer="clip:Take001; loop:infinite"></a-entity>-->
     
-   <a-entity   id="dust"
+   <a-entity   
                 position="0 -1500 -500" 
                 rotation="0 0 0"
                 particle-system="preset: dust;
-                                maxAge: 13;
+                                maxAge: 7;
                                 positionSpread: 5000 5000 5000;
                                 type: 2 (sphere);
                                 color: #C8DAD8, #5C6D74;
-                                opacity: 0.023;
+                                opacity: 0.01;
                                 direction: 0;
                                 enable: true;
                                 particleCount: 3000;
-                                size: 2000;
+                                size: 2300;
                                 maxParticleCount:3000;
                                 blending: 2;
                                 dragSpread: 10;
                                 dragValue:0.3;
                                 dragSpread: 0.5;
                                 randomise: true;
-                                accelerationValue: 5, -10, 5">
+                                accelerationValue: 7, -20, 10">
+  </a-entity>
+      
+      <a-entity
+                position="0 -1500 -500" 
+                rotation="0 0 0"
+                particle-system="preset: dust;
+                                maxAge: 7;
+                                positionSpread: 5000 5000 5000;
+                                type: 2 (sphere);
+                                color: #C8DAD8, #5C6D74;
+                                opacity: 0.01;
+                                direction: 0;
+                                enable: true;
+                                particleCount: 3000;
+                                size: 2300;
+                                maxParticleCount:3000;
+                                blending: 2;
+                                dragSpread: 10;
+                                dragValue:0.3;
+                                dragSpread: 0.5;
+                                randomise: true;
+                                accelerationValue: -7, 20, -10">
   </a-entity>
       
 
